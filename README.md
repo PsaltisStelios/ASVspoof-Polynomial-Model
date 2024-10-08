@@ -4,12 +4,12 @@ ASVspoof Polynomial Networks (NCD)
 This repository contains code and Jupyter notebooks for training and evaluating Polynomial Networks (PNs) using the Nested Couple Decomposition (NCD) technique for the ASVspoof challenge.
 
 ### Environmnet
-* Python 3.6+
-* PyTorch 1.1.0
+* Python == 3.8.19
+* PyTorch == 2.4.1
 * Required Python packages (listed in requirements)
 * ASVspoof dataset
 
-In the premise of this project we leverage 2 repositories, the ASVspoof and RawBoost. To install most dependencies automatically: 
+In the premise of this project we leverage 2 repositories, the ASVspoof and RawBoost. To install most dependencies automatically (you can also follow the instructions from these repo): 
 
     Python
     pip install -r requirements_asv.txt
