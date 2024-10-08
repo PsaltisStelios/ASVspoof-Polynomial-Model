@@ -72,7 +72,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Acknowledgments
 Below are some URL you might find helful during your journey!
 
-* [Zenodo Dataset](https://shields.io)
+* [Polynomial Networks](https://github.com/polynomial-nets/tutorial-2022-intro-polynomial-nets)
 * [Train/Dev Dataset 2019 (LA.zip)](https://datashare.ed.ac.uk/handle/10283/3336)
 * [Eval Dataset 2021 (Speech_Data/LA subset)](https://zenodo.org/records/4837263)
 * [Eval Dataset 2021 (LA keys and metadata)](https://www.asvspoof.org/index2021.html)
