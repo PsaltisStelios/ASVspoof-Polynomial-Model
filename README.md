@@ -39,12 +39,11 @@ Download the ASVspoof dataset and follow the instuctions in ASVspoof_Guide.ipynb
 
 ## Step 4: Training
 You can pick one of the listed models below to run
-1) Default AVSspoof Conv2D (with logits extraction)
-2) Mulit-degree Polynomial
-3) Single Polynomial (NCP)
-4) NCP + Special layer
-5) NCP + Special layer + More Convolution Layers
-6) NCP + Special layer + More Convolution Layers + More BLSTM Layers
+1) Default AVSspoof Conv2D (with logits extraction): model_conv2D_logits.py
+2) Multi-degree Polynomial: model_MultiDegreePolynomial.py
+3) Single Polynomial (NCP): model_ncp.py
+4) NCP + Special layer: model_ncp_special.py
+5) NCP + Special layer + More Convolution Layers + More BLSTM Layers: model_ncp_special_extra.py
 
 
 
