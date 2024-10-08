@@ -46,15 +46,6 @@ You can pick one of the listed models below to run
 
 
 
-Files and Structure
-data: Directory for storing the ASVspoof dataset.
-models: Directory for saving trained models.
-train.ipynb: Jupyter notebook for training the PN model.
-evaluate.ipynb: Jupyter notebook for evaluating the trained model.
-utils.py: Utility functions for data preprocessing, model evaluation, etc.
-requirements.txt: List of required Python packages.
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
