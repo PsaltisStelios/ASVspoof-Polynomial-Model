@@ -21,20 +21,23 @@ In the premise of this project we leverage 2 repositories, the ASVspoof and RawB
     Bash
     git clone https://github.com/asvspoof-challenge/2021
 
-Some things to pay attention from this repository are:
+
+## Step 2: Apply changes to the ASVspoof repository
+Some things to pay attention from this repository are (Don't worry, this repository also includes a version of the ASV_spoof with all the necessry changes so you can train your own models):
 1) Only the LA/Baeline-LFCC-LCNN subdirectory contains the actual "core_scripts" and "core_modules" folders. These folders contain multiple python scripts that manage various tasks in the background.
 2) The DATA folder contains a single ".gitkeep" in order to be succesfully created (even though empty) during cloning of the repo. Howeveve, in this file you should put your own dataset with the correct format ( see the "toy_dataset.zip" in https://www.dropbox.com/sh/gf3zp00qvdp3row/AABc-QK2BvzEPj-s8nBwCkMna/temp/asvspoof2021/toy_example.tar.gz )
 3) The most importnat scrpts you will need to manage during training are the **config.py**, **main.py** and **model.py** ( all are located under "baseline_DF/project" )
 4) The first time you train a model, the repo will create 3 dictionaries containing metadata of your files. If in the future you change your data (here for augmentation reasons) you will also need to ***DELETE*** these dictionaries befoe start trainig again.
 5) The execution of the repo start by running the bash script "02_toy_example.sh" in a Terminal. If you DO NOT INTENT to use a pre-trained model (as done in this repo) you must change the order in which the training and evalulation are done here (first execute the **"00_train.sh"** and then the **"01_eval.sh"**). In adittion to that, the repo will save by default the checkpoint of your trained model, under the "baseline_LA" folder. The "eval.sh" uses that checkpoin in order to start the inference stage. Make sure to correct the path (From trained_model=__pretrained/trained_network.pt to wherever you choose to save your model)
+6) In the "config.py" make sure to set the correct paths to the flac files (for train/dev/eval) under the DATA folder
+7) Here the development dataset is not used for hyper-parameter tuning but for evaluating the model after each epoch and keep a record of best-epochs for the early stopping mechanism
 
 
-## Step 2: Data Preparation
+## Step 3: Data Preparation
 Download the ASVspoof dataset and follow the instuctions in ASVspoof_Guide.ipynb in order to make the neccesary changes and create the files needed for training
 
 
-
-## Step 3: Training
+## Step 4: Training
 You can pick one of the listed models below to run
 1) Default AVSspoof Conv2D (with logits extraction)
 2) Mulit-degree Polynomial
@@ -42,7 +45,6 @@ You can pick one of the listed models below to run
 4) NCP + Special layer
 5) NCP + Special layer + More Convolution Layers
 6) NCP + Special layer + More Convolution Layers + More BLSTM Layers
-
 
 
 
