@@ -1,6 +1,6 @@
-# ASVspoof-Polynomial-Model
+# ASVspoof Polynomial Networks (Detection of spoofed voice files)
 
-ASVspoof Polynomial Networks (Detection of spoofed voice files)
+
 This repository contains code and Jupyter notebooks for training and evaluating Polynomial Networks (PNs) using the Nested Couple Decomposition (NCD) technique for the ASVspoof challenge.
 
 ### Environmnet
