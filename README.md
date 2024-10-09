@@ -46,7 +46,7 @@ You can pick one of the listed models below to run
 5) NCP + Special layer + More Convolution Layers + More BLSTM Layers: <code style="color : name_color">model_ncp_special_extra.py</code>
 
 
-## Step 4: Evaluation
+## Step 5: Evaluation
 The model uses the development dataset to determine the best epoch and extracts the log_eval_score.txt from the evaluation dataset at that epoch. These scores are then evaluated against the ground truth metadata to calculate false positives and false negatives. Two models are implemented: one from the AVspoof repo with a cost model (false positives are more costly than false negatives) and another without a cost model. Both models calculate the EER (Equal Error Rate), with the first using t-CDF and the second using a different method.
 
 
